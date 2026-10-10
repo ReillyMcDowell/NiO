@@ -1,0 +1,8 @@
+title: NiO
+description: Learning VASP and Modeling for NiO systems
+theme: jekyll-theme-cayman
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
