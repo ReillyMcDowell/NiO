@@ -19,3 +19,4 @@ order: 1
 | **Highest** | Lowest | **Empirical Models** | Fit parameters to data |
 | **Mid** | Mid | **Semi-Empirical Models** | Between empirical and quantum |
 | Lowest | **Highest** | **Quantum Mechanical** | More info but need approximations |
+
