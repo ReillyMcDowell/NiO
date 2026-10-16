@@ -38,7 +38,7 @@ Problem w/ Potentials
 -cohesive energy depends on # of bonds, **But non-linearly**
 
 Solution
-- Write energy per atom as $$E = f*(# of bonds)$$ where f is the non-linear function --> **Energy Functionals**
+- Write energy per atom as $$E = f*(number of bonds)$$ where f is the non-linear function --> **Energy Functionals**
 
 Embedded Atom Method (EAM)
 - proximity measured by e- density on central atom
