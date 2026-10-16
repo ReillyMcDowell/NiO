@@ -3,7 +3,9 @@
   title: Chapter 4 Notes
   category: IntroDis
   permalink: /Ch4Notes/
-  order 1
+  order: 1
 ---
 
-# Placeholder
+# Chapter 4: Elastic Properties of Dislocations
+
+
