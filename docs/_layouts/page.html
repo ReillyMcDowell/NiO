@@ -82,7 +82,7 @@ layout: default
       <div class="sidebar-content">
         <h3>Electronic Structure R.M.Martin</h3>
         <ul>
-          {% assign estruc_pages = site.pages | where: "category", "E Structure" %}
+          {% assign estruc_pages = site.pages | where: "category", "EStructure" %}
           {% assign sorted_pages = estruc_pages | sort: "order" %}
           {% for my_page in sorted_pages %}
             <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title }}</a></li>
