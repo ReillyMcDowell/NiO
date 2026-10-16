@@ -14,7 +14,7 @@ order: 1
 
 > "Modeling rarely is "simulation of reality". Rather it is the accurate computation of quantities that are essential to prove/disprove a theory, or guarantee a property."
 
-| Speed ($\uparrow$) | Transferability ($\downarrow$) | Computational Model | Description |
+| Speed ($$\uparrow$$) | Transferability ($$\downarrow$$) | Computational Model | Description |
 | :---: | :---: | :--- | :--- |
 | **Highest** | Lowest | **Empirical Models** | Fit parameters to data |
 | **Mid** | Mid | **Semi-Empirical Models** | Between empirical and quantum |
