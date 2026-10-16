@@ -20,3 +20,15 @@ order: 1
 | **Mid** | Mid | **Semi-Empirical Models** | Between empirical and quantum |
 | Lowest | **Highest** | **Quantum Mechanical** | More info but need approximations |
 
+### What can potentials be fit to?
+- lattice constants
+- cohesive energy
+- bulk modulus
+- equation of state
+- forces
+- other elastic constants
+- phonon frequencies
+- surface energy and relaxation
+- liquid pair correlation functions
+- stable crystal strucutures
+- stable energy differences
