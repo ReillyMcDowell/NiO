@@ -1,0 +1,104 @@
+---
+layout: default
+---
+
+<style>
+  .flex-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+  }
+
+  /* Overrides the Jekyll theme's default narrow screen width container */
+  .wrapper {
+  max-width: 1024px !important;
+  }
+  
+  .main-column {
+    flex: 4;
+    min-width: 300px; 
+  }
+
+  .sidebar-column {
+    flex: 1;
+    min-width: 250px; 
+    position: sticky;
+    top: 10px; /* Stops sliding 10px from the top of the screen */
+    align-self: flex-start; /* CRITICAL: Sticky items in Flexbox need this to work! */
+  }
+
+  .mobile-toggle-label { display: none; }
+  #sidebar-toggle { display: none; }
+
+  @media (max-width: 1024px) {
+    .sidebar-column {
+      order: -1; 
+      flex: 100%; 
+      
+      top: 0; /* Sticks flush to the very top edge on phones */
+      background-color: white; /* Added so scrolling text hides behind it */
+      z-index: 100; /* Forces it to hover above the scrolling text */
+      padding-top: 20px; /* Just to give it some breathing room */
+      padding-bottom: 10px;
+    }
+    
+    .sidebar-content {
+      display: none; 
+    }
+
+    .mobile-toggle-label {
+      display: block; 
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    #sidebar-toggle:checked ~ .sidebar-content {
+      display: block; 
+    }
+  }
+</style>
+
+<section class="standalone">
+  <div class="flex-layout">
+    
+    <div class="main-column">
+      <article>
+        {%- if page.permalink contains "resources" %}
+        {% include improve_doc_link.html %}
+        {% endif -%}
+        <h1>{{ page.title }}</h1>
+        {{ content }}
+      </article>
+    </div>
+
+    <aside class="sidebar-column">
+      
+      <input type="checkbox" id="sidebar-toggle">
+      
+      <label for="sidebar-toggle" class="mobile-toggle-label">
+        Dropdown Menu ▼
+      </label>
+
+      <div class="sidebar-content">
+        <h3>Sidebar Content Item 1</h3>
+        <ul>
+          {% assign Item1_pages = site.pages | where: "category", "Item 1" %}
+          {% assign sorted_pages = Item1_pages | sort: "order" %}
+          {% for my_page in sorted_pages %}
+            <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title }}</a></li>
+          {% endfor %}
+        </ul>
+        <h3>Sidebar Content Item 2</h3>
+        <ul>
+          {% assign Item2_pages = site.pages | where: "category", "Item 2" %}
+          {% assign sorted_pages = Item2_pages | sort: "order" %}
+          {% for my_page in sorted_pages %}
+            <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+    </aside>
+
+  </div>
+</section>
