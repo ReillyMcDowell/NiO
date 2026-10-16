@@ -7,13 +7,13 @@ title: NiO
 
 > 'chmod +x vasp_*'
 > 
-> 'module load miniconda3/24.1.2-py310
+> 'module load miniconda3/24.1.2-py310'
 > 
->              intel/2021.10.0
+>              'intel/2021.10.0'
 > 
->              openmpi/5.0.2
+>              'openmpi/5.0.2'
 > 
->              hdf5/1.14.3'
+>              'hdf5/1.14.3'
 > 
 > 'source activate vasp_plugin'
 
