@@ -3,6 +3,13 @@ layout: page
 title: NiO
 ---
 
-## Project Description
+# Things to do after opening Cardinal Terminal:
 
-Learning VASP and Modeling for NiO systems
+> 'chmod +x vasp_*'
+> 'module load miniconda3/24.1.2-py310
+>              intel/2021.10.0
+>              openmpi/5.0.2
+>              hdf5/1.14.3'
+> 'source activate vasp_plugin'
+
+
