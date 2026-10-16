@@ -83,7 +83,7 @@ layout: default
         <h3>MIT 3.320 OCW</h3>
         <ul>
           {% assign MIT3320OCW_pages = site.pages | where: "category", "MIT3320OCW" %}
-          {% assign sorted_pages = Item1_pages | sort: "order" %}
+          {% assign sorted_pages = MIT3320OCW_pages | sort: "order" %}
           {% for my_page in sorted_pages %}
             <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title }}</a></li>
           {% endfor %}
