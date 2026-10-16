@@ -5,4 +5,4 @@ title: NiO
 
 ## Project Description
 
-placeholder stuff
+Learning VASP and Modeling for NiO systems
