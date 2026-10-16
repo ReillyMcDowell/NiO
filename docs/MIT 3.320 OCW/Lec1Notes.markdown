@@ -14,3 +14,6 @@ order: 1
 
 > "Modeling rarely is "simulation of reality". Rather it is the accurate computation of quantities that are essential to prove/disprove a theory, or guarantee a property."
 
+*   $\uparrow$ **Faster** | **Empirical Models**: Fit parameters to data
+*   $\updownarrow$ **Semi-Empirical Models**: In-between speed and transferability
+*   $\downarrow$ **Transferable** | **Quantum Mechanical**: Provides more detailed information but requires approximations
